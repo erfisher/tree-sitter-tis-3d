@@ -1,0 +1,266 @@
+[
+  {
+    "type": "arg_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "command",
+    "named": true,
+    "fields": {
+      "argument": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "arg_literal",
+            "named": true
+          },
+          {
+            "type": "default_port",
+            "named": true
+          },
+          {
+            "type": "label",
+            "named": true
+          },
+          {
+            "type": "unknown_port",
+            "named": true
+          }
+        ]
+      },
+      "instruction": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "MOV",
+            "named": false
+          },
+          {
+            "type": "instruction",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "default_port",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "line_label",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "label",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "macro",
+    "named": true,
+    "fields": {
+      "label": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "default_port",
+            "named": true
+          },
+          {
+            "type": "unknown_port",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "arg_literal",
+            "named": true
+          },
+          {
+            "type": "default_port",
+            "named": true
+          },
+          {
+            "type": "unknown_port",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "program",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "line_comment",
+          "named": true
+        },
+        {
+          "type": "line_label",
+          "named": true
+        },
+        {
+          "type": "macro",
+          "named": true
+        },
+        {
+          "type": "program_end",
+          "named": true
+        },
+        {
+          "type": "program_start",
+          "named": true
+        },
+        {
+          "type": "statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "program_end",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "program_start",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "external_text",
+          "named": true
+        },
+        {
+          "type": "program",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "line_comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "#!BEGIN PROGRAM",
+    "named": false
+  },
+  {
+    "type": "#!END PROGRAM",
+    "named": false
+  },
+  {
+    "type": "#BWTM",
+    "named": false
+  },
+  {
+    "type": "#DEFINE",
+    "named": false
+  },
+  {
+    "type": "#UNDEFINE",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "ANY",
+    "named": false
+  },
+  {
+    "type": "DOWN",
+    "named": false
+  },
+  {
+    "type": "LAST",
+    "named": false
+  },
+  {
+    "type": "LEFT",
+    "named": false
+  },
+  {
+    "type": "MOV",
+    "named": false
+  },
+  {
+    "type": "NUL",
+    "named": false
+  },
+  {
+    "type": "RIGHT",
+    "named": false
+  },
+  {
+    "type": "UP",
+    "named": false
+  },
+  {
+    "type": "external_text",
+    "named": true
+  },
+  {
+    "type": "instruction",
+    "named": true
+  },
+  {
+    "type": "label",
+    "named": true
+  },
+  {
+    "type": "line_comment",
+    "named": true
+  },
+  {
+    "type": "unknown_port",
+    "named": true
+  }
+]

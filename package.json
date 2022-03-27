@@ -1,0 +1,17 @@
+{
+  "name": "tree-sitter-tis-3d",
+  "version": "0.8.0",
+  "description": "Tree-sitter grammar for TIS-3d source code",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SeerUnseeing",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.15.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.6"
+  }
+}

@@ -1,0 +1,10 @@
+test
+test2
+# Commented external text
+#!BEGIN PROGRAM
+#DEFINE OUTP UP
+LOOP : ADD 1
+JEZ LOOP
+JLZ LOOP
+JMP LOOP
+#!END PROGRAM
